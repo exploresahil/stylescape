@@ -22,7 +22,7 @@
     font-family: "helvetica_now_displayXLt";
     font-size: 1.6em;
   }
-  .noMobile .nav {
+  .nav {
     display: none !important;
   }
   .containerAll {
