@@ -23,7 +23,7 @@
     font-size: 1.6em;
   }
   .noMobile .nav {
-    display: none;
+    display: none !important;
   }
   .containerAll {
     display: none;
