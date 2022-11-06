@@ -1,3 +1,9 @@
+:root {
+    --black: #000;
+    --brown: #502222;
+}
+
+
 @font-face {
     font-family: 'helvetica_now_displayXLt';
     src: url('./helveticanowdisplay-extlt.woff2') format('woff2'),
@@ -28,6 +34,9 @@
 
         
     }
+
+
+
 
     .nav {
             display: none !important;
@@ -153,6 +162,7 @@ section {
 }
 
 .sec2 {
+
     h2 {
         font-family: 'helvetica_now_displayXLt';
             font-size: 5em;

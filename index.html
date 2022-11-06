@@ -628,6 +628,25 @@
 
     <!-----------------------------------------------gsap-->
     <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.fromTo(
+        ".containerAll",
+        {
+          backgroundColor: gsap.getProperty("html", "--black"),
+        },
+        {
+          scrollTrigger: {
+            //markers: "true",
+            trigger: ".sec2",
+            scrub: true,
+            end: "bottom bottom",
+          },
+          backgroundColor: gsap.getProperty("html", "--brown"),
+        }
+      );
+
+      <!-----------------------------------------------gsapText-->
+
       const myText = new SplitType(".stylescape");
 
       gsap.from(".char", {
@@ -672,8 +691,6 @@
         repeat: -1,
         repeatDelay: 2,
       });
-
-      gsap.registerPlugin(ScrollTrigger);
 
       const myText2 = new SplitType(".mindWalking", {
         charClass: "char2",
@@ -896,8 +913,6 @@
         ease: Power1.easeOut,
       });
 
-      <!--------------------------------------svg
-      -->
       gsap.from(".svg1", {
         scrollTrigger: {
           trigger: ".svg1",

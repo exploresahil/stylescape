@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --black: #000;
+  --brown: #502222;
+}
+
 @font-face {
   font-family: "helvetica_now_displayXLt";
   src: url("./helveticanowdisplay-extlt.woff2") format("woff2"), url("./helveticanowdisplay-extlt.woff") format("woff");
