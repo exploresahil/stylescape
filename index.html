@@ -9,18 +9,8 @@
   </head>
   <body>
     <div class="nav">
-      <a href="#sec1">1</a>
-      <a href="#sec2">2</a>
-      <a href="#sec3">3</a>
-      <a href="#sec4">4</a>
-      <a href="#sec5">5</a>
-      <a href="#sec6">6</a>
-      <a href="#sec7">7</a>
-      <a href="#sec8">8</a>
-      <a href="#sec9">9</a>
-      <a href="#sec10">10</a>
-      <a href="#sec11">11</a>
-      <a href="#sec12">12</a>
+      <a href="#sec1">↑</a>
+      <a href="#sec2">↓</a>
     </div>
     <div class="noMobile">
       <h1>Desktop view only.</h1>
@@ -33,30 +23,46 @@
         <p>by Sahil Satpute</p>
       </section>
       <section class="section sec2" id="sec2">
+        <div class="nav">
+          <a href="#sec1">↑</a>
+          <a href="#sec3">↓</a>
+        </div>
         <h2 class="mindWalking">Mind Walking</h2>
       </section>
       <section class="section sec3" id="sec3">
+        <div class="nav">
+          <a href="#sec2">↑</a>
+          <a href="#sec4">↓</a>
+        </div>
         <h3 class="myText3">
           Imagine yourself somewhere amazing, exactly 1 year from now.
         </h3>
       </section>
       <section class="section sec4" id="sec4">
+        <div class="nav">
+          <a href="#sec3">↑</a>
+          <a href="#sec5">↓</a>
+        </div>
         <div class="Strategy">
-          <h2>Strategy</h2>
-          <p>
+          <h2 class="strategy">Strategy</h2>
+          <p class="myText5">
             User Personas<br />Brand Attributes<br />Goals Prioritization<br />Conversion
             Funnel
           </p>
         </div>
-        <p>→</p>
-        <h3>Design/Marketing</h3>
+        <p class="myText6">→</p>
+        <h3 class="myText7">Design/Marketing</h3>
       </section>
       <section class="section sec5" id="sec5">
-        <h3>
+        <div class="nav">
+          <a href="#sec4">↑</a>
+          <a href="#sec6">↓</a>
+        </div>
+        <h3 class="myText8">
           Describe the Brand (desired future state) in terms of voice, tone,
           look and feel:
         </h3>
-        <p>
+        <p class="myText9">
           ___________________________________________
           ___________________________________________
           ___________________________________________
@@ -65,8 +71,12 @@
         </p>
       </section>
       <section class="section sec6" id="sec6">
-        <h2>Brand Attributes</h2>
-        <ul>
+        <div class="nav">
+          <a href="#sec5">↑</a>
+          <a href="#sec7">↓</a>
+        </div>
+        <h2 class="myText10">Brand Attributes</h2>
+        <ul class="myText11">
           <li>Rustic</li>
           <li>Authentic</li>
           <li>Industrial</li>
@@ -79,10 +89,22 @@
         </ul>
       </section>
       <section class="section sec7" id="sec7">
-        <h2>Empathy Map</h2>
+        <div class="nav">
+          <a href="#sec6">↑</a>
+          <a href="#sec8">↓</a>
+        </div>
+        <h2 class="myText12">Empathy Map</h2>
       </section>
       <section class="section sec8" id="sec8">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 868 690.97">
+        <div class="nav">
+          <a href="#sec7">↑</a>
+          <a href="#sec9">↓</a>
+        </div>
+        <svg
+          class="svg1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 868 690.97"
+        >
           <defs>
             <style>
               .cls-1 {
@@ -394,9 +416,17 @@
         </svg>
       </section>
       <section class="section sec9" id="sec9">
-        <h2>Brand Demographics</h2>
+        <div class="nav">
+          <a href="#sec8">↑</a>
+          <a href="#sec10">↓</a>
+        </div>
+        <h2 class="myText13">Brand Demographics</h2>
       </section>
       <section class="section sec10" id="sec10">
+        <div class="nav">
+          <a href="#sec9">↑</a>
+          <a href="#sec11">↓</a>
+        </div>
         <div class="brandDemo">
           <h3>Bold</h3>
           <svg
@@ -489,6 +519,10 @@
       </section>
 
       <section class="section sec11" id="sec11">
+        <div class="nav">
+          <a href="#sec10">↑</a>
+          <a href="#sec12">↓</a>
+        </div>
         <div class="brandDemo">
           <h3>Affordable</h3>
           <svg
@@ -580,6 +614,10 @@
         </div>
       </section>
       <section class="section sec12" id="sec12">
+        <div class="nav">
+          <a href="#sec11">↑</a>
+          <a href="#sec12">↓</a>
+        </div>
         <h3>Thank You.</h3>
       </section>
     </div>
@@ -646,13 +684,14 @@
           trigger: ".mindWalking",
           //markers: true,
           scrub: true,
+          scrub: 0.5,
           start: "-50px 450px",
           end: "center center",
         },
         y: 40,
         opacity: 0,
         stagger: 0.05,
-        duration: 0.3,
+        duration: 0.1,
         ease: Power1.easeOut,
       });
 
@@ -665,13 +704,233 @@
           trigger: ".myText3",
           //markers: true,
           scrub: true,
+          scrub: 0.5,
           start: "-50px 450px",
           end: "center center",
         },
         y: 40,
         opacity: 0,
         stagger: 0.05,
-        duration: 0.3,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText4 = new SplitType(".strategy", {
+        charClass: "char5",
+      });
+
+      gsap.from(".char5", {
+        scrollTrigger: {
+          trigger: ".strategy",
+          //markers: true,
+          scrub: true,
+          scrub: 0.5,
+          start: "-200px 200px",
+          end: "200px 500px",
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText5 = new SplitType(".myText5", {
+        charClass: "char6",
+      });
+
+      gsap.from(".char6", {
+        scrollTrigger: {
+          trigger: ".myText5",
+          //markers: true,
+          scrub: true,
+          scrub: 0.8,
+          start: "-150px 200px",
+          end: "180px 500px",
+        },
+        y: 40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText6 = new SplitType(".myText6", {
+        charClass: "char7",
+      });
+
+      gsap.from(".char7", {
+        scrollTrigger: {
+          trigger: ".myText6",
+          //markers: true,
+          scrub: true,
+          scrub: 0.8,
+          start: "-200px 200px",
+          end: "140px 500px",
+        },
+        x: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText7 = new SplitType(".myText7", {
+        charClass: "char8",
+      });
+
+      gsap.from(".char8", {
+        scrollTrigger: {
+          trigger: ".myText7",
+          //markers: true,
+          scrub: true,
+          scrub: 1.5,
+          start: "-50px center",
+          end: "center center",
+        },
+        y: 40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText8 = new SplitType(".myText8", {
+        charClass: "char9",
+      });
+
+      gsap.from(".char9", {
+        scrollTrigger: {
+          trigger: ".myText8",
+          //markers: true,
+          scrub: true,
+          scrub: 0.5,
+          start: "-50px center",
+          end: "120px center",
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText9 = new SplitType(".myText9", {
+        charClass: "char10",
+      });
+
+      gsap.from(".char10", {
+        scrollTrigger: {
+          trigger: ".myText9",
+          //markers: true,
+          scrub: true,
+          scrub: 0.8,
+          start: "-50px center",
+          end: "60px center",
+        },
+        x: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText10 = new SplitType(".myText10", {
+        charClass: "char11",
+      });
+
+      gsap.from(".char11", {
+        scrollTrigger: {
+          trigger: ".myText10",
+          //markers: true,
+          scrub: true,
+          scrub: 0.5,
+          start: "-50px center",
+          end: "50px center",
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText11 = new SplitType(".myText11", {
+        type: "words",
+        wordClass: "word1",
+      });
+
+      gsap.from(".word1", {
+        scrollTrigger: {
+          trigger: ".myText10",
+          //markers: true,
+          scrub: true,
+          scrub: 1,
+          start: "-50px center",
+          end: "60px center",
+        },
+        y: 40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText12 = new SplitType(".myText12", {
+        charClass: "char12",
+      });
+
+      gsap.from(".char12", {
+        scrollTrigger: {
+          trigger: ".myText12",
+          //markers: true,
+          scrub: true,
+          scrub: 0.5,
+          start: "-50px center",
+          end: "center center",
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      <!--------------------------------------svg
+      -->
+      gsap.from(".svg1", {
+        scrollTrigger: {
+          trigger: ".svg1",
+          //markers: true,
+          scrub: true,
+          scrub: 1,
+          start: "-50px center",
+          end: "center center",
+        },
+        y: -100,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
+        ease: Power1.easeOut,
+      });
+
+      const myText13 = new SplitType(".myText13", {
+        charClass: "char13",
+      });
+
+      gsap.from(".char13", {
+        scrollTrigger: {
+          trigger: ".myText13",
+          //markers: true,
+          scrub: true,
+          scrub: 0.5,
+          start: "-50px center",
+          end: "center center",
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 0.05,
+        duration: 0.1,
         ease: Power1.easeOut,
       });
     </script>

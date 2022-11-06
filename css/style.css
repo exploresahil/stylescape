@@ -54,11 +54,11 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-family: "Bebas";
+  font-family: "Bebas Neue";
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   width: 50px;
   height: 100vh;
   right: 0;
@@ -67,7 +67,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  gap: 0.5rem;
+  gap: 5rem;
 }
 .nav a {
   width: 20px;
@@ -82,7 +82,7 @@ h1 {
   font-weight: 600;
 }
 .nav a:hover {
-  background-color: white;
+  background-color: rgb(5, 44, 142);
   color: black;
   border: none;
 }
@@ -109,29 +109,27 @@ section {
 }
 
 .char1 {
-  color: #247ba0;
+  color: rgb(5, 44, 142);
 }
 
 .sec1 {
   flex-direction: column;
-  gap: 1rem;
 }
 .sec1 h1 {
   font-size: 10em;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 85%);
   line-height: 5.6rem;
 }
 .sec1 h1:nth-of-type(2) {
-  position: relative;
-  transform: translateY(-118%);
+  position: absolute;
   font-size: 10em;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 85%, 0% 85%);
+          clip-path: polygon(0 5%, 100% 5%, 100% 85%, 0% 85%);
   line-height: 5.6rem;
+  transform: translateY(-14%);
 }
 .sec1 p {
-  transform: translateY(-400%);
   font-family: "helvetica_now_displayXLt";
   font-size: 2em;
 }
@@ -177,7 +175,7 @@ section {
   width: 40vw;
 }
 .sec5 p {
-  width: 40vw;
+  width: 45vw;
   font-family: "helvetica_now_displayXLt";
   font-size: 4em;
   letter-spacing: normal;
@@ -194,6 +192,7 @@ section {
   letter-spacing: 0.05em;
 }
 .sec6 ul {
+  width: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
