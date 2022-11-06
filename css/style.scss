@@ -1,6 +1,10 @@
 :root {
-    --black: #000;
-    --brown: #502222;
+    --white: #FFFFFF;
+    --brown: #4F2322 !important;
+    --black: #121212;
+    --pink: #FDD6DB;
+    --blue:#013558;
+    --grey:#B6B6B6;
 }
 
 
@@ -53,7 +57,6 @@
 
 
 * {
-    color: white;
     box-sizing: border-box;
 }
 
@@ -61,7 +64,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: black;
+    background-color: var(--white);
     font-size: 62.5%;
     margin: 0;
 }
@@ -91,7 +94,6 @@ h1 {
     a {
         width: 20px;
         height: 20px;
-        border: 1px solid;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -99,9 +101,11 @@ h1 {
         text-decoration: none;
         font-family: 'helvetica_now_displayXLt';
         font-weight: 600;
+        color: white;
+        background-color: #000;
 
         &:hover {
-            background-color: rgb(5, 44, 142);
+            background-color: rgb(139, 162, 221);
             color: black;
             border: none;
         }
@@ -114,7 +118,6 @@ h1 {
     width: 100vw;
     //scroll-snap-type: y mandatory;
     //overflow-y: scroll;
-    height: 100vh;
 }
 
 section {
@@ -145,6 +148,7 @@ section {
         font-size: 10em;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 85%);
         line-height: 5.6rem;
+        
     }
     
     h1:nth-of-type(2) {
@@ -166,6 +170,7 @@ section {
     h2 {
         font-family: 'helvetica_now_displayXLt';
             font-size: 5em;
+            color: var(--white);
     }
 }
 
@@ -174,11 +179,13 @@ section {
         font-family: 'helvetica_now_displayXLt';
             font-size: 4em;
             width: 50vw;
+            color: black;
+            color: var(--white);
     }
 }
 
 .sec4 {
-
+    display: flex;
     gap: 2rem;
 
     div {
@@ -209,6 +216,7 @@ section {
 
 .sec5 {
     flex-direction: column;
+    color: var(--white);
     h3 {
         font-family: 'helvetica_now_displayXLt';
             font-size: 3em;
@@ -269,6 +277,7 @@ section {
     h2 {
             font-family: 'helvetica_now_displayXLt';
             font-size: 5em;
+            color: var(--white);
         }
 }
 
@@ -287,9 +296,10 @@ section {
             font-weight: 100;
     }
     
-    svg {
+    img {
         width: 30vw;
     }
+
 
     h3:nth-of-type(1) {
         justify-self: end;
@@ -304,6 +314,44 @@ section {
         text-align: right;
     }
 }
+
+.brandDemo1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    align-items: center;
+
+    h3 {
+        font-family: 'helvetica_now_displayXLt';
+        font-size: 3em;
+        width: min-content;
+        font-weight: 100;
+        color: var(--white);
+    }
+
+    img {
+        width: 30vw;
+    }
+
+
+    h3:nth-of-type(1) {
+        justify-self: end;
+        text-align: right;
+    }
+
+    h3:nth-of-type(3) {
+        justify-self: end;
+        text-align: right;
+    }
+
+    h3:nth-of-type(5) {
+        justify-self: end;
+        text-align: right;
+    }
+}
+
 
 .sec12 {
     h3{
